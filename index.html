@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Van Gogh</title>
+    <link rel="stylesheet" href="unico.css">
+</head>
+
+<body>
+
+    <div class="vangogh-inicio">
+        <h1>Vincent Van Gogh</h1>
+        <p>Bem-vindo ao site dedicado a um dos maiores artistas da história!</p>
+    </div>
+
+    <h2 class="obra_title">Obras Famosas</h2>
+
+    <img src="Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Starry Night" onclick="openPopup('popup1')">
+    <img src="Vincent_Willem_van_Gogh_128.jpg" alt="Girassóis" onclick="openPopup('popup2')">
+    <img src="Vincent_Willem_van_Gogh_-_Cafe_Terrace_at_Night_(Yorck).jpg" alt="Café à Noite" onclick="openPopup('popup3')">
+    <img src="download.jpeg" alt="Auto-retrato" onclick="openPopup('popup4')">
+    <img src="images.jpeg" alt="Íris" onclick="openPopup('popup5')">
+
+    <p class="clique-mais">Clique nas imagens para saber mais.</p>
+
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+    <div class="popup" id="popup1">
+        <span class="close" onclick="closePopup()">X</span>
+        <h3>Noite Estrelada</h3>
+        <p>Uma das obras mais famosas de Van Gogh, pintada em 1889.</p>
+    </div>
+
+    <div class="popup" id="popup2">
+        <span class="close" onclick="closePopup()">X</span>
+        <h3>Girassóis</h3>
+        <p>Esta série de pinturas foi criada entre 1888 e 1889 e é um ícone da arte pós-impressionista.</p>
+    </div>
+
+    <div class="popup" id="popup3">
+        <span class="close" onclick="closePopup()">X</span>
+        <h3>Café à Noite</h3>
+        <p>Pintado em 1888, retrata um café em Arles, destacando as cores vibrantes e a atmosfera única.</p>
+    </div>
+
+    <div class="popup" id="popup4">
+        <span class="close" onclick="closePopup()">X</span>
+        <h3>Auto-retrato</h3>
+        <p>Van Gogh pintou vários auto-retratos, explorando sua identidade e estado emocional.</p>
+    </div>
+
+    <div class="popup" id="popup5">
+        <span class="close" onclick="closePopup()">X</span>
+        <h3>Íris</h3>
+        <p>Uma das obras mais conhecidas, pintada em 1889, durante sua estadia no asilo de Saint-Rémy.</p>
+    </div>
+
+    <button onclick="openPopup('quizPopup')">Teste seu Conhecimento</button>
+
+    <div class="popup" id="quizPopup">
+        <span class="close" onclick="closePopup()">X</span>
+        <h3>Qual a data de nascimento de Van Gogh?</h3>
+        <input type="text" id="quizAnswer" placeholder="Digite sua resposta">
+        <button onclick="checkAnswer()">Enviar</button>
+        <p id="feedback"></p>
+    </div>
+
+    <button onclick="openPopup('thankyouPopup')">Sair</button>
+
+    <div class="popup" id="thankyouPopup">
+        <span class="close" onclick="closePopup()">X</span>
+        <h3>Obrigado pela visita ao nosso Museu!</h3>
+        <button onclick="redirectToGoogle()">Sair</button>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
