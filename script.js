@@ -1,6 +1,9 @@
 function openPopup(popupId) {
     document.getElementById(popupId).style.display = 'block';
     document.getElementById('overlay').style.display = 'block';
+}
+
+function Popup() {
     document.getElementById('thankyouPopup').style.display = 'block';
 }
 
